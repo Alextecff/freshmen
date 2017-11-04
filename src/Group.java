@@ -28,9 +28,10 @@ public class Group implements Professor {
     @Override
     public void pereklichka() {
         int count = 0;
+        System.out.println("Присудствуют :");
         for (Student st : students) {
             if (st.isPresence()) {
-                System.out.println(st);
+                System.out.println(st.getName() + " " + st.getSurname());
             } else {
                 count++;
             }
@@ -38,6 +39,11 @@ public class Group implements Professor {
 
         if(countStudents > count){
             System.out.println("Отсутствующих студентов: " + count);
+            for(Student st : students){
+                if(!st.isPresence()){
+                    System.out.println(st.getName() + st.getSurname());
+                }
+            }
         }
     }
 }

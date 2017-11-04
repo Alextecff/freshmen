@@ -6,10 +6,11 @@ public class Main {
         group1.addStudent(new Student("Alex1", "Prohorov1", 21, 1, 83, 4.6, true));
         group1.addStudent(new Student("Alex2", "Prohorov2", 20, 1, 93, 4.7, false));
         group1.addStudent(new Student("Alex3", "Prohorov3", 22, 1, 95, 4, true));
+        group1.addStudent(new Student("Alex4", "Prohorov4", 24, 1, 76, 3.2, false));
 
-        group2.addStudent(new Student("Alex4", "Prohorov4", 22, 2, 73, 3.9, true));
         group2.addStudent(new Student("Alex5", "Prohorov5", 23, 2, 90, 4.3, true));
         group2.addStudent(new Student("Alex6", "Prohorov6", 19, 2, 88, 4.5, false));
+        group2.addStudent(new Student("Alex7", "Prohorov7", 22, 2, 73, 3.9, true));
 
 
         System.out.println("Студенты первой группы:");
@@ -31,7 +32,11 @@ public class Main {
         System.out.println("Перекличка первой группы:");
         group1.pereklichka();
 
+        System.out.println();
+
         System.out.println("Перекличка второй группы:");
         group2.pereklichka();
+
+        System.out.println("===========================================================================================");
     }
 }
